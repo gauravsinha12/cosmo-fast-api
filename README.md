@@ -55,15 +55,6 @@ uvicorn main:app --host 0.0.0.0 --port 5050
 ```
 
 ##### 3.4 Open the application in browser
-If Swagger Is Used
-```bash
-http://127.0.0.1:5050/docs
-```
-To create Dump products in DB
-
-`http://127.0.0.1:5050/docs#/default/add_fake_products_fake__num__post`
-
-If Swagger Is Not Used
 ```bash
 http://127.0.0.1:5050
 ```
