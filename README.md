@@ -73,7 +73,7 @@ http://127.0.0.1:5050
 #### 4.1.
 ![Data Creation](./SS/fake.png)
 
--POST
+- POST
   `/fake/11`
 
 
