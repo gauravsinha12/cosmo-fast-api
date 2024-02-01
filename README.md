@@ -70,6 +70,8 @@ http://127.0.0.1:5050
     Delete a product
 
 #### 3.2. `/orders` 
+![order](./ss/orders.png)
+
 - GET
     - `/all/`
     Get list of all orders
