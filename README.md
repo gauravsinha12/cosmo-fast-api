@@ -49,14 +49,18 @@ git clone https://github.com/gauravsinha12/cosmo-fast-api.git
 pip install -r requirements.txt
 ```
 
-##### 3.3 Run the application
+#### 3.3 Run the application
 ```bash
 uvicorn main:app --host 0.0.0.0 --port 5050
 ```
 
-##### 3.4 Open the application in browser
+#### 3.4 Open the application in browser
 ```bash
 http://127.0.0.1:5050
+```
+#### 3.5 To use Swagger
+```bash
+http://127.0.0.1:5050/docs/
 ```
 
 ### 4. API Documentation
