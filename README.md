@@ -1,4 +1,4 @@
-## Fastapi ecommerce Server
+## Cosmo Fast API
 
 ### 1. Problem Statement
 You need to create a sample backend application in FastAPI, Python and MongoDB. The challenge assumes you have basic knowledge of Python and some knowledge of Flask / Django / FastAPI as well as MongoDB.
