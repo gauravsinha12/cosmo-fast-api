@@ -3,24 +3,58 @@
 ### 1. Problem Statement
 You need to create a sample backend application in FastAPI, Python and MongoDB. The challenge assumes you have basic knowledge of Python and some knowledge of Flask / Django / FastAPI as well as MongoDB.
 
-### 2. How to run the application
+### 2 Database Schema
+#### 2.1 Orders
+```json
+{
+    "createdOn": "Optional[datetime]",
+    "orderItems": "List[OrderItem]",
+    "userAddress": "userAddress",
+    "totalPrice": "Optional[float]"
+}
+```
+#### 2.2 OrderItem
+```json
+{
+    "productId": "string",
+    "boughtQuantity": "int"
+}
+```
+#### 2.3 UserAddress
+```json
+{
+    "City": "string",
+    "Country": "string",
+    "ZipCode": "string"
+}
+```
+#### 2.4 Products
+```json
+{
+    "name": "string",
+    "price": "float",
+    "quantity": "int"
+}
+```
 
-#### 2.1. Clone the repository
+### 3. How to run the application
+
+#### 3.1. Clone the repository
 ```bash
 git clone https://github.com/gauravsinha12/cosmo-fast-api.git
 ```
 
-#### 2.2. Install the dependencies
+#### 3.2. Install the dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-##### 2.5.2. Run the application
+##### 3.3 Run the application
 ```bash
 uvicorn main:app --host 0.0.0.0 --port 5050
 ```
 
-##### 2.5.3. Open the application in browser
+##### 3.4 Open the application in browser
 If Swagger Is Used
 ```bash
 http://127.0.0.1:5050/docs
@@ -34,16 +68,16 @@ If Swagger Is Not Used
 http://127.0.0.1:5050
 ```
 
-### 3. API Documentation
+### 4. API Documentation
 
-#### 3.0.
+#### 4.1.
 ![Data Creation](./SS/fake.png)
 
 -POST
   `/fake/11`
 
 
-#### 3.1. `/products`
+#### 4.2. `/products`
 ![Products](./SS/products.png)
 
 - GET
@@ -69,7 +103,7 @@ http://127.0.0.1:5050
     - `/{product_id}/`
     Delete a product
 
-#### 3.2. `/orders` 
+#### 4.3. `/orders` 
 ![order](./SS/orders.png)
 
 - GET
@@ -89,36 +123,3 @@ http://127.0.0.1:5050
     - `/{order_id}/`
     Delete an order
 
-### 4. Database Schema
-#### 4.4. Orders
-```json
-{
-    "createdOn": "Optional[datetime]",
-    "orderItems": "List[OrderItem]",
-    "userAddress": "userAddress",
-    "totalPrice": "Optional[float]"
-}
-```
-#### 4.2. OrderItem
-```json
-{
-    "productId": "string",
-    "boughtQuantity": "int"
-}
-```
-#### 4.3. UserAddress
-```json
-{
-    "City": "string",
-    "Country": "string",
-    "ZipCode": "string"
-}
-```
-#### 4.1. Products
-```json
-{
-    "name": "string",
-    "price": "float",
-    "quantity": "int"
-}
-```
