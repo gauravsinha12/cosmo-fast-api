@@ -37,12 +37,15 @@ http://127.0.0.1:5050
 ### 3. API Documentation
 
 #### 3.0.
-![Products](./SS/fake.png)
+![Data Creation](./SS/fake.png)
+
 -POST
   `/fake/11`
 
 
 #### 3.1. `/products`
+![Products](./SS/products.png)
+
 - GET
     - `/all/`
     Get list of all products
