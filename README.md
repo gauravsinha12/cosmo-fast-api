@@ -70,7 +70,7 @@ http://127.0.0.1:5050
     Delete a product
 
 #### 3.2. `/orders` 
-![order](./ss/orders.png)
+![order](./SS/orders.png)
 
 - GET
     - `/all/`
