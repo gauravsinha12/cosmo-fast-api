@@ -118,5 +118,5 @@ http://127.0.0.1:5050/docs/
     - `/{order_id}/`
     Delete an order
 
-#### 5.0 `Output`
+#### 5.0 `Response`
 ![result](./SS/aasare.PNG)
