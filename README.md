@@ -119,4 +119,4 @@ http://127.0.0.1:5050/docs/
     Delete an order
 
 #### 5.0 `Output`
-![result](./SS/aasare.png)
+![result](./SS/aasare.PNG)
